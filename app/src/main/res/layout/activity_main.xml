@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/round_bg"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:background="@drawable/round_bg"
+        android:text="A"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"/>
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_marginRight="8dp"
+        android:singleLine="true"
+        android:text="Full name"
+        android:layout_toRightOf="@+id/round_bg"
+        android:textSize="28dp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/text_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/round_bg"
+        android:layout_below="@+id/text_name"
+        android:singleLine="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/time"
+        android:text="This is the subject"
+        android:textSize="16dp"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/round_bg"
+        android:layout_below="@+id/text_subject"
+        android:singleLine="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/time"
+        android:text="This is the content"
+        android:textSize="16dp"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:06pm"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgchk"/>
+    <ImageView
+        android:id="@+id/imgchk"
+        android:src="@drawable/ic_star_nonselected"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
